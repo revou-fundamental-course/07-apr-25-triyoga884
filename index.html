@@ -3,9 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rhodes Island Pharmaceuticals Inc.</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>    
+        <!-- Logo  -->
+        <div class="logo">
+            <img src="./assets/854049991865401374.gif" alt="">
+        </div>
+        <!-- Navbar -->
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Profile">Profile</a>
+            <a href="#Facilities">Facilities</a>
+            <a href="#Message">Message</a>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Home -->
+        <div id="Home">
+            <div class="bg-container">
+                <span>Hello _, Welcome to website</span>
+            </div>
+        </div>
+        <!-- Profile -->
+        <div id="Profile">
+            <section class="text-profile">
+                <span>Profile</span>
+            </section>
+            <section class="desc-profile">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur libero dolor perspiciatis dicta provident cumque reprehenderit recusandae temporibus ipsa odit, ad repellendus pariatur, est impedit culpa totam aliquid? Id.</p>
+            </section>
+        </div>
+        <!-- Facilities -->
+        <div id="Facilities">
+            <section class="text-facilities">
+                <p>Our Facilities</p>
+            </section>
+            <section class="img-facilities">
+                <div class="img-facilities-card">
+                    <img src="assets\854049991865401374.gif" alt="">
+                    <span>Facilities</span>
+                </div>
+                <div class="img-facilities-card">
+                    <img src="assets\854049991865401374.gif" alt="">
+                    <span>Facilities</span>
+                </div>
+                <div class="img-facilities-card">
+                    <img src="assets\854049991865401374.gif" alt="">
+                    <span>Facilities</span>
+                </div>
+            </section>
+        </div>
+        <!-- Message -->
+        <div id="Message">
+            <section class="text-message">
+                <p>Message Us</p>
+            </section>
+            <section class="text-message-cardbox" >
+                <form action="" >
+                    <div class="text-message-card">
+                        <label for="name">Nama <span>:</span></label><input class="name" id="name" type="text" placeholder="Nama" required >
+                    </div>
+                    <div class="text-message-card">
+                        <label for="birthplace">Tanggal Lahir <span>:</span></label><input class="birthplace" id="birthplace" type="date" required >
+                    </div>
+                    <div class="text-message-card">
+                        <label for="gender">Jenis Kelamin <span>:</span></label>
+                        <div class="gender-wrapper">
+                            <label for="male"><input class="gender" id="male" type="radio" name="gender" value="male" required> Male</label>
+                            <label for="female"><input class="gender" id="female" type="radio" name="gender" value="female" required> Female</label>
+                        </div>
+                    </div>
+                    <div class="text-message-card">
+                        <label for="msg">Pesan <span>:</span></label>
+                        <textarea class="msg" id="msg"  required ></textarea>
+                    </div>
+                    <label for="submit"><input class="submit" id="submit" type="submit"  ></label>
+                </form>
+                <div class="result-message">
+                    <div class="result-message-card">
+                        <span class="label-time">Current Time </span>
+                        <span class="value-time">: A</span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Nama</span>
+                        <span class="value">: A</span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Tanggal Lahir</span>
+                        <span class="value">: A</span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Jenis Kelamin</span>
+                        <span class="value">: A</span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Pesan</span>
+                        <span class="value">: A</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <span>Created By TriYogaF</span>
+    </footer>
 </body>
 </html>
