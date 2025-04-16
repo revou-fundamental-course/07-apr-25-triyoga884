@@ -262,6 +262,7 @@ label > .submit {
 .result-message-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .result-message-card > .label {
@@ -273,6 +274,8 @@ label > .submit {
 
 .result-message-card:first-of-type {
   justify-content: flex-end;
+  color: blue;
+  padding-bottom: 10px;
 }
 
 footer {
