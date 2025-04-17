@@ -1,44 +1,88 @@
-let input = [];
-let output = [];
+let value = true;
 
+// Klik tombol submit
 document.getElementById("submit").addEventListener("click", function () {
-  event.preventDefault();
-  const waktu = new Date().toLocaleString();
-
-  document.getElementById("result-message-time").innerHTML += waktu;
-
-  //   Input Nama dan Menampilkannya di sebelah form
-  input.push(document.getElementById("name").value);
-  let name = (document.getElementById("result-message-name").innerHTML =
-    input[0]);
-  document.getElementById("result-message-name").innerHTML = ": ";
-  document.getElementById("result-message-name").innerHTML += input[0];
-
-  //   Input Tanggal lahir dan Menampilkannya di sebelah form
-  input.push(document.getElementById("birthplace").value);
-  // Mengubah urutan YYYY-MM-DD menjadi DD-MM--YYYY
-  const date = input[1].split("-");
-  const dateReverse = `${date[2]}-${date[1]}-${date[0]}`;
-  document.getElementById("result-message-birth").innerHTML = ": ";
-  document.getElementById("result-message-birth").innerHTML += dateReverse;
-
-  //   Input Jenis Kelamin dan Menampilkannya di sebelah form
-  input.push(document.querySelector('input[name="gender"]:checked').value);
-  if (input[2] == "male") {
-    document.getElementById("result-message-gender").innerHTML += "Laki-Laki";
-  } else document.getElementById("result-message-gender").innerHTML += "Perempuan";
-
-  //   Input Pesan dan Menampilkannya di sebelah form
-  input.push(document.getElementById("msg").value);
-  document.getElementById("result-message-msg").innerHTML = ": ";
-  document.getElementById("result-message-msg").innerHTML += input[3];
-
-  // Menampilkan Pengirim di banner Home
-  document.getElementById(
-    "greeting-home"
-  ).innerHTML = `Hello ${name}, Welcome to Website`;
-
-  // Reset form dan isi array input
-  document.getElementById("form-message").reset();
-  input = [];
+  submitMessage();
 });
+
+// Input data message, menampilkannya dan reset form
+function submitMessage() {
+  event.preventDefault();
+
+  // Input Nama
+  const name = document.getElementById("name").value;
+  // Input Tanggal lahir
+  const birthdate = document.getElementById("birthdate").value;
+  // Input Gender
+  const gender = document.querySelector('input[name="gender"]:checked');
+  // Input Message
+  const message = document.getElementById("msg").value;
+
+  // Validation
+  if (name && birthdate && gender && message) {
+    value = true;
+  }
+  if (name == "") {
+    document.getElementById("name-alert").style.display = "block";
+    value = false;
+  } else {
+    document.getElementById("name-alert").style.display = "none";
+  }
+  if (birthdate == "") {
+    document.getElementById("birthdate-alert").style.display = "block";
+    value = false;
+  } else {
+    document.getElementById("birthdate-alert").style.display = "none";
+  }
+  if (!gender) {
+    document.getElementById("gender-alert").style.display = "block";
+    value = false;
+  } else {
+    document.getElementById("gender-alert").style.display = "none";
+  }
+  if (message == "") {
+    document.getElementById("msg-alert").style.display = "block";
+    value = false;
+  } else {
+    document.getElementById("msg-alert").style.display = "none";
+  }
+
+  // Output data
+  if (value) {
+    // Name
+    document.getElementById("result-message-name").innerHTML = name;
+    // Birthdate
+    // Mengubah urutan YYYY-MM-DD menjadi DD-MM--YYYY
+    if (birthdate) {
+      const date = birthdate.split("-");
+      const dateReverse = `${date[2]}-${date[1]}-${date[0]}`;
+      document.getElementById("result-message-birth").innerHTML = dateReverse;
+    }
+    // Gender
+    if (gender) {
+      if (gender.value === "male") {
+        document.getElementById("result-message-gender").innerHTML =
+          "Laki-laki";
+      } else {
+        document.getElementById("result-message-gender").innerHTML =
+          "Perempuan";
+      }
+    }
+    // Message
+    document.getElementById("result-message-msg").innerHTML = message;
+    // Show message time
+    const waktu = new Date().toLocaleString();
+    document.getElementById("result-message-time").innerHTML = waktu;
+    // Reset form
+    document.getElementById("form-message").reset();
+  }
+}
+
+function hideAlert() {
+  document.getElementById("name-alert").style.display = "none";
+  document.getElementById("birthdate-alert").style.display = "none";
+  document.getElementById("gender-alert").style.display = "none";
+  document.getElementById("msg-alert").style.display = "none";
+}
+
+hideAlert();

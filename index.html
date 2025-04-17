@@ -135,10 +135,12 @@
                         <label for="name">Nama <span>:</span></label><input class="name" id="name" type="text"
                             placeholder="Nama" required>
                     </div>
+                    <span id="name-alert">Masukkan nama anda</span>
                     <div class="text-message-card">
-                        <label for="birthplace">Tanggal Lahir <span>:</span></label><input class="birthplace"
-                            id="birthplace" type="date" required>
+                        <label for="birthdate">Tanggal Lahir <span>:</span></label><input class="birthdate"
+                            id="birthdate" type="date" required>
                     </div>
+                    <span id="birthdate-alert">Masukkan tanggal lahir anda</span>
                     <div class="text-message-card">
                         <label for="gender">Jenis Kelamin <span>:</span></label>
                         <div class="gender-wrapper">
@@ -148,32 +150,39 @@
                                     value="female" required> Female</label>
                         </div>
                     </div>
+                    <span id="gender-alert">Pilih jenis kelamin anda</span>
                     <div class="text-message-card">
                         <label for="msg">Pesan <span>:</span></label>
                         <textarea class="msg" id="msg" placeholder="Pesan" required></textarea>
                     </div>
+                    <span id="msg-alert">Masukkan Pesan anda</span>
                     <label for="submit"><input class="submit" id="submit" type="submit"></label>
                 </form>
                 <div class="result-message">
                     <div class="result-message-card">
                         <span class="label-time">Current Time </span>
-                        <span id="result-message-time" class="value-time">: </span>
+                        <span>: </span>
+                        <span id="result-message-time" class="value-time"> </span>
                     </div>
                     <div class="result-message-card">
                         <span class="label">Nama</span>
-                        <span id="result-message-name" class="value">: </span>
+                        <span>: </span>
+                        <span id="result-message-name" class="value"> </span>
                     </div>
                     <div class="result-message-card">
                         <span class="label">Tanggal Lahir</span>
-                        <span id="result-message-birth" class="value">: </span>
+                        <span>: </span>
+                        <span id="result-message-birth" class="value"> </span>
                     </div>
                     <div class="result-message-card">
                         <span class="label">Jenis Kelamin</span>
-                        <span id='result-message-gender' class="value">: </span>
+                        <span>: </span>
+                        <span id='result-message-gender' class="value"> </span>
                     </div>
                     <div class="result-message-card">
                         <span class="label">Pesan</span>
-                        <span id="result-message-msg" class="value">: </span>
+                        <span>: </span>
+                        <span id="result-message-msg" class="value"> </span>
                     </div>
                 </div>
             </section>
