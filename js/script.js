@@ -86,3 +86,28 @@ function hideAlert() {
 }
 
 hideAlert();
+
+let indexBanner = 0;
+
+function nextBanner() {
+  indexBanner++;
+  showBanner();
+}
+// Menampilkan tiap banner
+function showBanner() {
+  const banner = document.getElementsByClassName("banner");
+
+  if (indexBanner > banner.length - 1) {
+    indexBanner = 0;
+  }
+  // Hide semua banner
+  for (let i = 0; i < banner.length; i++) {
+    banner[i].style = "display : none";
+  }
+  // Show banner seusai index
+  banner[indexBanner].style = "display : block";
+}
+
+setInterval(() => {
+  nextBanner();
+}, 3000);
