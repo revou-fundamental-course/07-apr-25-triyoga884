@@ -1,11 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rhodes Island Pharmaceuticals Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/Rhodes_Island.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header>
+        <!-- Logo  -->
+        <div class="logo">
+            <img src="./assets/854049991865401374.gif" alt="">
+            <!-- <span class="text-logo">Rhodes Island Pharmaceuticals Inc.</span> -->
+        </div>
+        <!-- Navbar -->
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Profile">Profile</a>
+            <a href="#Facilities">Facilities</a>
+            <a href="#Message">Message</a>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Home -->
+        <div id="Home">
+            <div class="bg-container">
+                <img class="banner banner-1" src="assets\RI_Landship_2_waifu2x_art_noise3_scale.webp" alt="">
+                <img class="banner banner-2"
+                    src="assets\7df10de18232418294cd4c35258ebeed.jpg_waifu2x_photo_noise3_scale.webp" alt="">
+                <img class="banner banner-3"
+                    src="assets\5599a208c3514cc9aab8279680b956fb.jpg_waifu2x_photo_noise3_scale.webp" alt="">
+                <span id="name-home">Hello Guest, Welcome to Website</span>
+            </div>
+        </div>
+        <!-- Profile -->
+        <div id="Profile">
+            <section class="text-profile">
+                <span>Profile</span>
+            </section>
+            <section class="desc-profile">
+                <p>Rhodes Island is a large landship consisting of six decks capable of holding a large amount of crew
+                    within her hull, allowing to mobilize the personnel anywhere, at any time. In simple terms, it works
+                    similar to an aircraft carrier, while serving as a living space for Operators. Because Rhodes Island
+                    needs to constantly obtain enough sufficient data to systematically study Oripathy and its effects,
+                    the landship also needs to move from area to area. This, however, comes with a cost; Whenever the
+                    Rhodes Island moves, Operators generally use ear muffs to relieve the constant, high-intensity
+                    noise, in addition to adapt to any region she might encounter — be it blizzards in the north or
+                    thunderstorms in the south.
+                </p>
+                <p>
+                    Rhodes Island herself is already a mechanical wonder, even compared to high-speed warships. Her size
+                    and weight are comparable to a large flagship, only surpassed by Blacksteel's Fort Barron. She has a
+                    capacity limit for 2,000 onboard Operators and personnel, and available beds for more than 1,000
+                    patients. The living quarters and crew cabins are available in single, double, and quadruple
+                    options, while the exact allocation will be provided for newly-onboard Operators by the HR
+                    Department once they receive the approval, and they will be guided by the Logistics staff. In case
+                    an Operator doesn't like or isn't used to the bumpy nature of the landship, they can also submit an
+                    application to be relocated to any of R.I.'s fixed branch offices. In addition to helipads and
+                    farms, she also has a training ground which includes at least one shooting range for the Rhodes
+                    Island paramilitary force, and several incineration (or more likely, cremation) chambers to safely
+                    dispose of terminally ill Infected R.I. personnel.
+                </p>
+            </section>
+        </div>
+        <!-- Facilities -->
+        <div id="Facilities">`
+            <div class="text-facilities">
+                <p>Our Facilities</p>
+            </div>
+            <div class="slider-container">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+
+                <div class="slides">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/4/45/Background-Doctor%27s_Office.png?6f297d=&format=original">
+                            <p>Doctor's Office</p>
+                        </div>
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/d/d4/Background-RI_Command_Center.png?d61104&format=original">
+                            <p>Command Center</p>
+                        </div>
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/1/11/Background-RI_War_Room.png?a180be">
+                            <p>Meeting Room</p>
+                        </div>
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/9/94/Background-RI_Cafeteria.png?db988a">
+                            <p>Cafetaria</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/a/aa/Background-RI_Infirmary.png?9ac742">
+                            <p>Infirmary</p>
+                        </div>
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/f/fc/Background-RI_Medical_Bay.png?99f903">
+                            <p>Medical Bay</p>
+                        </div>
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/4/48/Background-RI_Shop.png?94104e">
+                            <p>General Store</p>
+                        </div>
+                        <div class="item"><img
+                                src="https://arknights.wiki.gg/images/1/1d/Background-RI_Lounge.png?f0c246">
+                            <p>Lounge</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigasi -->
+                <div class="nav">
+                    <label for="slide1">1</label>
+                    <label for="slide2">2</label>
+                </div>
+            </div>
+        </div>
+        <!-- Message -->
+        <div id="Message">
+            <section class="text-message">
+                <p>Message Us</p>
+            </section>
+            <section class="text-message-cardbox">
+                <form id="form-message">
+                    <div class="text-message-card">
+                        <label for="name">Nama <span>:</span></label><input class="name" id="name" type="text"
+                            placeholder="Nama" required>
+                    </div>
+                    <span id="name-alert">Masukkan nama anda</span>
+                    <div class="text-message-card">
+                        <label for="birthdate">Tanggal Lahir <span>:</span></label><input class="birthdate"
+                            id="birthdate" type="date" required>
+                    </div>
+                    <span id="birthdate-alert">Masukkan tanggal lahir anda</span>
+                    <div class="text-message-card">
+                        <label for="gender">Jenis Kelamin <span>:</span></label>
+                        <div class="gender-wrapper">
+                            <label for="male"><input class="gender" id="male" type="radio" name="gender" value="male"
+                                    required> Male</label>
+                            <label for="female"><input class="gender" id="female" type="radio" name="gender"
+                                    value="female" required> Female</label>
+                        </div>
+                    </div>
+                    <span id="gender-alert">Pilih jenis kelamin anda</span>
+                    <div class="text-message-card">
+                        <label for="msg">Pesan <span>:</span></label>
+                        <textarea class="msg" id="msg" placeholder="Pesan" required></textarea>
+                    </div>
+                    <span id="msg-alert">Masukkan Pesan anda</span>
+                    <label for="submit"><input class="submit" id="submit" type="submit"></label>
+                </form>
+                <div class="result-message">
+                    <div class="result-message-card">
+                        <span class="label-time">Current Time </span>
+                        <span>: </span>
+                        <span id="result-message-time" class="value-time"> </span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Nama</span>
+                        <span>: </span>
+                        <span id="result-message-name" class="value"> </span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Tanggal Lahir</span>
+                        <span>: </span>
+                        <span id="result-message-birth" class="value"> </span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Jenis Kelamin</span>
+                        <span>: </span>
+                        <span id='result-message-gender' class="value"> </span>
+                    </div>
+                    <div class="result-message-card">
+                        <span class="label">Pesan</span>
+                        <span>: </span>
+                        <span id="result-message-msg" class="value"> </span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <span>Created By TriYogaF</span>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
