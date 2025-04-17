@@ -249,6 +249,11 @@ textarea,
   padding: 5px;
 }
 
+form > span {
+  color: red;
+  text-align: right;
+}
+
 .gender-wrapper > label {
   margin-right: 10px;
 }
@@ -260,6 +265,7 @@ label > .submit {
 }
 
 .result-message-card {
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -273,9 +279,18 @@ label > .submit {
 }
 
 .result-message-card:first-of-type {
+  gap: 10px;
   justify-content: flex-end;
   color: blue;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+#result-message-msg {
+  text-align: justify;
+}
+
+.value {
+  padding: 0px 5px;
 }
 
 footer {
