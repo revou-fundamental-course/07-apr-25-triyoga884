@@ -87,9 +87,6 @@ main {
   height: 600px;
   overflow: hidden;
   position: relative;
-  /* background-image: url("/assets/RI_Landship_2_waifu2x_art_noise3_scale.webp");
-  background-size: cover;
-  background-position: top; */
 }
 
 .bg-container > span {
@@ -308,4 +305,236 @@ footer {
   align-items: center;
   justify-content: flex-end;
   padding: 10px 50px;
+}
+
+/*  Responsive */
+/* HP */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0px;
+  }
+
+  /* logo */
+
+  .logo {
+    padding: 6px;
+  }
+  .logo > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Navbar   */
+
+  nav {
+    display: flex;
+    gap: 5px;
+    margin: 6px 12px;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 12px;
+  }
+
+  main {
+    padding: 12px 12px;
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+    gap: 25px;
+  }
+
+  .bg-container {
+    height: 300px;
+  }
+
+  .bg-container > span {
+    position: absolute;
+    font-size: 13px;
+  }
+
+  .bg-container > img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .text-profile,
+  .text-facilities {
+    font-size: 23px;
+  }
+
+  .desc-profile {
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .text-message {
+    font-size: 23px;
+  }
+
+  .text-message-cardbox {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0px;
+  }
+
+  /* logo */
+
+  .logo {
+    padding: 6px;
+  }
+  .logo > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Navbar   */
+
+  nav {
+    display: flex;
+    gap: 5px;
+    margin: 6px 12px;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 12px;
+  }
+
+  main {
+    padding: 12px 12px;
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+    gap: 25px;
+  }
+
+  .bg-container {
+    height: 400px;
+  }
+
+  .bg-container > span {
+    position: absolute;
+    font-size: 16px;
+  }
+
+  .bg-container > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-profile,
+  .text-facilities {
+    font-size: 23px;
+  }
+
+  .desc-profile {
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .text-message {
+    font-size: 23px;
+  }
+
+  .text-message-cardbox {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
+/* Laptop/PC */
+@media (min-width: 1200px) {
+  header {
+    flex-direction: row;
+  }
+
+  /* logo */
+  .logo {
+    padding: 15px;
+  }
+  .logo > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Navbar   */
+
+  nav {
+    gap: 20px;
+    margin: 10px 20px;
+  }
+
+  nav a {
+    padding: 20px;
+  }
+
+  main {
+    padding: 20px 30px;
+    width: 1200px;
+    display: flex;
+    margin: 50px auto;
+    gap: 50px;
+  }
+
+  .bg-container {
+    height: 600px;
+  }
+
+  .bg-container > span {
+    position: absolute;
+    font-size: 25px;
+  }
+
+  .bg-container > img {
+    width: 100%;
+    height: 700px;
+  }
+
+  .text-profile,
+  .text-facilities {
+    font-size: 23px;
+  }
+
+  .desc-profile {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .text-message {
+    font-size: 25px;
+  }
+
+  .text-message-cardbox {
+    gap: 180px;
+    flex-direction: row;
+  }
+
+  footer {
+    justify-content: flex-end;
+  }
 }
