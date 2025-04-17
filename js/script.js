@@ -111,3 +111,19 @@ function showBanner() {
 setInterval(() => {
   nextBanner();
 }, 3000);
+
+// Meminta nama saat masuk pertama kali ke halaman
+function displayName() {
+  const nameHome = prompt("Masukkan nama anda");
+  if (nameHome) {
+    document.getElementById(
+      "name-home"
+    ).innerHTML = `Hello ${nameHome}, Welcome to Website`;
+  } else {
+    document.getElementById(
+      "name-home"
+    ).innerHTML = `Hello Guest, Welcome to Website`;
+  }
+}
+
+displayName();
